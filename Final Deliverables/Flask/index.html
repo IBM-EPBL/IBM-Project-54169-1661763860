@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+</head>
+<body>
+    <h1>WQI PREDICTION</h1>
+    <h2>Using Random Forest Regressor</h2>
+    
+    
+    <form method="POST" action="/predict">
+        
+        <p>Enter Dissolved Oxygen value</p>
+        <input name="do" required>
+        <p>Enter pH value</p>
+        <input name="ph" required>
+        <p>Enter Conductivity</p>
+        <input name="co" required>
+        <p>Enter BOD value</p>
+        <input name="bod" required>
+        <p>Enter Nitratenon value</p>
+        <input name="na" required>
+        <p>Enter Total Coliform</p>
+        <input name="tc" required>
+        <p>Enter Year</p>
+        <input name="year" required>
+        
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
